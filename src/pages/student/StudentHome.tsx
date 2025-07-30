@@ -45,7 +45,7 @@ const StudentHome: React.FC = () => {
 
     try {
       const response = await axios.get(
-        "http://localhost:3000/students/task-count-sucess",
+        "https://sanabel.wonderlearn.net/students/task-count-sucess",
         {
           headers: {
             Authorization: `Bearer ${authToken}`,

@@ -180,7 +180,7 @@ const Shop: React.FC = () => {
         buyFertilizerCount * fertilizerCost + buyWaterCount * waterCost;
 
       const response = await axios.patch(
-        "http://localhost:3000/students/buy-water-seeder",
+        "https://sanabel.wonderlearn.net/students/buy-water-seeder",
         {
           water: buyWaterCount,
           seeders: buyFertilizerCount,
@@ -228,7 +228,7 @@ const Shop: React.FC = () => {
       const token = localStorage.getItem("token");
       console.log(token);
       const response = await axios.patch(
-        "http://localhost:3000/students/grow-tree",
+        "https://sanabel.wonderlearn.net/students/grow-tree",
         {}, // Empty request body or you can add payload data here if needed
         {
           headers: {
@@ -247,7 +247,7 @@ const Shop: React.FC = () => {
   };
 
   return (
-    <div className="flex-col w-full h-full flex-center shadow-md p-2 border-[1px] border-[#33333325] rounded-xl">
+    <div className="flex-col w-full h-auto flex-center shadow-md p-2 border-[1px] border-[#33333325] rounded-xl">
       <div className="absolute">
         <Toaster />
       </div>

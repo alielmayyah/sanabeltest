@@ -113,9 +113,9 @@ const SanabelFeaturesPage = () => {
       initial={{ scale: 0.9, opacity: 0 }}
       animate={{ scale: 1, opacity: 1 }}
       transition={{ duration: 0.7, ease: "easeOut" }}
-      className="h-[80vh] flex flex-col w-full items-center justify-center p-2"
+      className="flex flex-col items-center justify-center w-full h-full p-1"
     >
-      <motion.div className="w-[70%] h-auto  my-4">
+      <motion.div className="w-[70%] h-64  my-4">
         <img
           src={sanabelAlEhsanLogo}
           alt="Sanabel Al Ehsan Logo"
@@ -175,7 +175,7 @@ const SanabelFeaturesPage = () => {
                 duration: 0.4,
               },
             }}
-            className="rounded-2xl p-2 gap-2 flex-center flex-col items-center text-center w-[90vw]  py-10"
+            className="flex-col items-center w-full gap-2 p-1 py-10 text-center rounded-2xl flex-center"
           >
             <motion.div
               className="p-4 mb-4 rounded-full"

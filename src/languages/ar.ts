@@ -183,6 +183,8 @@ const ar = {
 
     المستوى: "المستوى",
 
+    "No trophies found. Complete challenges to earn trophies!":
+      "لا توجد جوائز. أكمل التحديات لكسب الجوائز!",
     // Other Trophies
 
     "Tree Stage": "مرحلة الشجرة",

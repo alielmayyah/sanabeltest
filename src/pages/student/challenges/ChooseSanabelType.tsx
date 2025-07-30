@@ -28,8 +28,6 @@ import xpIcon from "../../../assets/resources/اكس بي.png";
 import { useUserContext } from "../../../context/StudentUserProvider";
 
 const SanabelType: React.FC = () => {
-
-
   const [categories, setCategories] = useState([]);
 
   const sanabelTypeImg = [
@@ -47,7 +45,7 @@ const SanabelType: React.FC = () => {
 
     try {
       const response = await axios.get(
-        "http://localhost:3000/students/tasks-category",
+        "https://sanabel.wonderlearn.net/students/tasks-category",
         {
           headers: {
             Authorization: `Bearer ${authToken}`,

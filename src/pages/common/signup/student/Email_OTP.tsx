@@ -77,7 +77,7 @@ const EmailOTP: React.FC<OTPProps> = ({
     setIsLoading(true);
     try {
       const response = await axios.post(
-        "http://localhost:3000/users/send-auth",
+        "https://sanabel.wonderlearn.net/users/send-auth",
         { email }
       );
 
@@ -106,7 +106,7 @@ const EmailOTP: React.FC<OTPProps> = ({
 
     try {
       const response = await axios.patch(
-        "http://localhost:3000/users/verfication-auth",
+        "https://sanabel.wonderlearn.net/users/verfication-auth",
         { email, otp: otpCode }
       );
 
